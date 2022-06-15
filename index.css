@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body,
+main,
+form {
+  display: flex;
+  background-color: #000;
+}
+
+main {
+  width: 78%;
+  height: auto;
+  justify-content: space-between;
+  background-color: hsl(0, 100%, 74%);
+  align-items: center;
+  padding: 3em 6em;
+  position: relative;
+  z-index: 0;
+  background-image: url("/images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+}
+
+main img,
+main picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#right-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#left-section,
+#right-section {
+  height: 100%;
+}
+
+#right-section-top,
+#right-section form,
+#right-section form button,
+#right-section form input {
+  border-radius: 5px;
+}
+
+#right-section-top {
+  padding: 12px 30px;
+  background-color: hsl(248, 32%, 49%);
+  color: #fff;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+#right-section-top p {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+#right-section-top p span {
+  font-weight: normal;
+}
+
+#right-section form {
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  height: fit-content;
+  border-radius: 5px;
+}
+#right-section form div{
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.error{
+  text-align: end;
+  font-size: 10px;
+  color: red;
+}
+
+#right-section form div input[type="text"], #right-section form div input[type="email"], #right-section form div input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  box-shadow: 0 0 0.2px 0.4px #ccc;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  background-size: 25px;
+}
+
+
+
+#right-section form div input:focus {
+  border: 1.5px solid #000;
+  box-shadow: none;
+  outline: none;
+  padding: 9.5px 20px;
+}
+
+#right-section form button {
+  width: 100%;
+  white-space: nowrap;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0px 4px hsl(154, 68%, 31%);
+  margin-bottom: 15px;
+}
+
+#right-section form button,
+#right-section form input {
+  border: none;
+  outline: none;
+}
+
+#policy{
+  width: 100%;
+}
+
+#policy span {
+  display: flex;
+  width: 100% !important;
+  /* align-items: center; */
+}
+
+#policy span #checkbox {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+#policy span p {
+  font-size: 9px;
+  color: grey;
+  line-height: 1;
+  height: fit-content;
+  text-align: center;
+}
+
+#policy span p b {
+  font-weight: bold;
+  color: red;
+}
+
+/* left section */
+#left-section {
+  width: 45%;
+  color: #fff;
+}
+
+#left-section h1 {
+  font-size: 2.5em;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+#left-section p {
+  margin-top: 30px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    height: auto;
+    padding: 30px 0;
+  }
+  main {
+    padding: 3em;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    background-image: url("/images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+  }
+
+  #left-section,
+  #right-section {
+    width: 100%;
+  }
+
+  #right-section {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 0;
+  }
+
+  main {
+    width: 100%;
+    padding: 2em;
+  }
+
+  #left-section h1,
+  #left-section p {
+    text-align: center;
+  }
+}
