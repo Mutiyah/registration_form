@@ -11,7 +11,7 @@ let errorDiv4 = document.getElementById("error4");
 const checkInput = () => {
     if (inputbox1.value.length == 0) {
         (errorDiv1.innerHTML = "First name cannot be empty");
-        inputbox1.style.background = 'url(images/icon-error.svg) no-repeat 95%';
+        inputbox1.style.background = 'url(icon-error.svg) no-repeat 95%';
       }else {
         (errorDiv1.innerHTML = "");
        inputbox1.style.background = '';
@@ -19,7 +19,7 @@ const checkInput = () => {
     
       if (inputbox2.value.length == 0) {
         (errorDiv2.innerHTML = "Last name cannot be empty");
-        inputbox2.style.background = 'url(images/icon-error.svg) no-repeat 95%';
+        inputbox2.style.background = 'url(icon-error.svg) no-repeat 95%';
       }else {
         (errorDiv2.innerHTML = "");
        inputbox2.style.background = '';
@@ -36,7 +36,7 @@ const checkInput = () => {
     
       if (inputbox4.value.length == 0 || inputbox4.value.length < 8) {
         (errorDiv4.innerHTML = "Password cannot be empty");
-        inputbox4.style.background = 'url(images/icon-error.svg) no-repeat 95%';
+        inputbox4.style.background = 'url(icon-error.svg) no-repeat 95%';
       }
        else {
        (errorDiv4.innerHTML = "");
