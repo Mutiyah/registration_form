@@ -27,7 +27,7 @@ const checkInput = () => {
     
       if (inputbox3.value.length == 0) {
         (errorDiv3.innerHTML = "Email cannot be empty");
-        inputbox3.style.background = 'url(images/icon-error.svg) no-repeat 95%';
+        inputbox3.style.background = 'url(icon-error.svg) no-repeat 95%';
 
       }  else {
         (errorDiv3.innerHTML = "");
